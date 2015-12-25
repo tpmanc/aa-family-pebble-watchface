@@ -1,0 +1,31 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "tpxtrime@mail.ru",
+    "longName": "Asking Alexandria",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/bg",
+                "menuIcon": true,
+                "name": "BG",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Asking Alexandria",
+    "targetPlatforms": [
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "2a290323-ffd6-46dd-8d75-93411d16d6da",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
