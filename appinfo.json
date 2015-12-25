@@ -9,6 +9,24 @@
     "resources": {
         "media": [
             {
+                "file": "fonts/roboto fornt",
+                "name": "FONT_ROBOTO_24",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/roboto fornt",
+                "name": "FONT_ROBOTO_20",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/roboto fornt",
+                "name": "FONT_ROBOTO_28",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
                 "file": "images/bg",
                 "menuIcon": true,
                 "name": "BG",
