@@ -31,7 +31,7 @@ void handle_init(void) {
   // Get information about the Window
   Layer *window_layer = window_get_root_layer(my_window);
   GRect bounds = layer_get_bounds(window_layer);
-  GRect img = GRect(30, 30, 120, 120);
+  GRect img = GRect(0, 30, bounds.size.w, 120);
   
   // set background
   window_set_background_color(my_window, GColorBlack);
@@ -42,6 +42,7 @@ void handle_init(void) {
   s_background_layer = bitmap_layer_create(img);
   // Set the bitmap onto the layer and add to the window
   bitmap_layer_set_bitmap(s_background_layer, s_background_bitmap);
+  bitmap_layer_set_alignment(s_background_layer, GAlignCenter);
   layer_add_child(window_layer, bitmap_layer_get_layer(s_background_layer));
 
   // Time
