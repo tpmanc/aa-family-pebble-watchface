@@ -13,10 +13,13 @@ static void update_time() {
 
   // Write the current hours and minutes into a buffer
   static char s_buffer[8];
+  static char date_buffer[12];
   strftime(s_buffer, sizeof(s_buffer), clock_is_24h_style() ? "%H:%M" : "%I:%M", tick_time);
+  strftime(date_buffer, sizeof(date_buffer), "%d.%m.%Y", tick_time);
 
   // Display this time on the TextLayer
   text_layer_set_text(text_layer, s_buffer);
+  text_layer_set_text(date_text, date_buffer);
 }
 
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
