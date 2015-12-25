@@ -47,7 +47,7 @@ void handle_init(void) {
 
   // Time
   // Create the TextLayer with specific bounds
-  text_layer = text_layer_create(GRect(0, 5, bounds.size.w, 34));
+  text_layer = text_layer_create(GRect(0, PBL_IF_ROUND_ELSE(5, 0), bounds.size.w, 34));
   // Improve the layout to be more like a watchface
   time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_28));
   text_layer_set_background_color(text_layer, GColorBlack);
@@ -59,7 +59,7 @@ void handle_init(void) {
   layer_add_child(window_layer, text_layer_get_layer(text_layer));
   
   // Date
-  date_text = text_layer_create(GRect(0, bounds.size.h - 40, bounds.size.w, 34));
+  date_text = text_layer_create(GRect(0, PBL_IF_ROUND_ELSE(bounds.size.h - 40, bounds.size.h - 25), bounds.size.w, 34));
   date_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_20));
   text_layer_set_background_color(date_text, GColorBlack);
   text_layer_set_text_color(date_text, GColorWhite);
